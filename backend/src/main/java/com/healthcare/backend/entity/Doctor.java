@@ -1,9 +1,10 @@
 package com.healthcare.backend.entity;
 
+import jakarta.persistence.*;
 import lombok.*;
 
-//@Entity
-//@Table(name = "doctors")
+@Entity
+@Table(name = "doctors")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -11,8 +12,8 @@ import lombok.*;
 @Builder
 public class Doctor {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
